@@ -19,7 +19,7 @@ setup(
     version=version,
     description='Tool for reading and writing datasets of tensors with '
                 'MessagePack and Lightning Memory-Mapped Database (LMDB)',
-    long_description='\n\n'.join(readme),
+    long_description=open('README.rst').read(),
     author='Igor Barros Barbosa and Aleksander Rognhaugen',
     author_email='',
     url='https://github.com/vicolab/ml-pyxis',
@@ -27,4 +27,4 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     install_requires=['lmdb', 'msgpack>=0.4.0', 'numpy>=1.9.0', 'six'],
-)
+    zip_safe=False)
